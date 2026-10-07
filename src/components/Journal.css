@@ -1,0 +1,9 @@
+.journal { margin-top: 80px; }
+.blog-card { background: var(--surface); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); }
+.blog-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.blog-img { width: 100%; height: 200px; object-fit: cover; }
+.blog-content { padding: 24px; }
+.blog-date { font-size: 12px; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: 8px; display: block; }
+.blog-title { font-size: 18px; font-weight: 600; margin-bottom: 12px; line-height: 1.4; }
+.blog-link { color: var(--primary); font-weight: 500; display: inline-flex; align-items: center; gap: 4px; font-size: 14px; }
+.blog-link:hover { text-decoration: underline; }

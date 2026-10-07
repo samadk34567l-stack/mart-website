@@ -1,0 +1,29 @@
+.deal-section { margin: 60px 0; border-radius: var(--radius-lg); background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); display: flex; overflow: hidden; position: relative; color: white; box-shadow: var(--shadow-lg); }
+.deal-content { padding: 60px; flex: 1; z-index: 2; }
+.deal-badge { background: var(--accent); color: white; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: bold; text-transform: uppercase; display: inline-block; margin-bottom: 20px; }
+.deal-title { font-size: 40px; margin-bottom: 16px; line-height: 1.1; }
+.deal-desc { font-size: 18px; opacity: 0.9; max-width: 400px; }
+
+.timer-box { display: flex; gap: 16px; margin: 32px 0; }
+.time-block { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-sm); padding: 12px 16px; text-align: center; min-width: 70px; }
+.time-val { font-size: 28px; font-weight: 700; font-family: 'Outfit', sans-serif; display: block; line-height: 1; }
+.time-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-top: 4px; display: block; }
+
+.deal-btn { padding: 16px 36px; background: white; color: var(--primary-dark); border-radius: 30px; font-size: 16px; font-weight: 600; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; }
+.deal-btn:hover { transform: translateX(8px); box-shadow: 0 10px 20px rgba(255, 255, 255, 0.25); }
+
+.deal-img-wrapper { flex: 1; position: relative; }
+.deal-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; mix-blend-mode: luminosity; transition: var(--transition); }
+.deal-section:hover .deal-img { transform: scale(1.05); mix-blend-mode: normal; opacity: 1; }
+
+@media (max-width: 1024px) {
+  .deal-section { flex-direction: column; }
+  .deal-img-wrapper { height: 300px; }
+}
+
+@media (max-width: 480px) {
+  .deal-content { padding: 32px; }
+  .deal-title { font-size: 28px; }
+  .time-block { min-width: 60px; padding: 8px; }
+  .time-val { font-size: 20px; }
+}

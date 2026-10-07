@@ -1,0 +1,7 @@
+.flash-title { display: flex; align-items: center; gap: 12px; }
+.flash-icon { color: var(--accent); }
+.view-all { color: var(--primary); font-weight: 600; display: flex; align-items: center; }
+
+.flash-sale-container { display: flex; gap: 24px; overflow-x: auto; padding-bottom: 24px; scrollbar-width: none; }
+.flash-sale-container::-webkit-scrollbar { display: none; }
+.flash-sale-item { min-width: 280px; }

@@ -1,0 +1,25 @@
+.detail-view { padding: 40px 0; animation: detailFadeIn 0.4s ease; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; color: var(--text-light); margin-bottom: 32px; font-weight: 500; transition: var(--transition); }
+.back-btn:hover { color: var(--primary); transform: translateX(-4px); }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+.detail-image { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+.detail-info { display: flex; flex-direction: column; justify-content: center; }
+.d-cat { color: var(--accent); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
+.d-title { font-size: 40px; font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
+.d-rating { display: flex; align-items: center; gap: 8px; margin-bottom: 24px; color: var(--text-light); }
+.d-stars { display: flex; color: #fbbf24; }
+.d-rating-value { font-weight: 600; color: var(--text); }
+.d-price { font-size: 36px; font-weight: 700; color: var(--primary); font-family: 'Outfit', sans-serif; margin-bottom: 24px; }
+.d-old-price { font-size: 20px; color: var(--text-light); text-decoration: line-through; margin-left: 16px; font-weight: 500; }
+.d-desc { font-size: 16px; line-height: 1.8; color: var(--text-light); margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--border); }
+.d-actions { display: flex; gap: 16px; }
+.d-add-btn { flex: 1; padding: 18px; background: var(--primary); color: white; font-size: 18px; font-weight: 600; border-radius: var(--radius-sm); transition: var(--transition); box-shadow: 0 10px 20px rgba(79,70,229,0.2); }
+.d-add-btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+.d-perks { margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+.d-perk { display: flex; align-items: center; gap: 12px; color: var(--text-light); }
+
+@keyframes detailFadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 1024px) {
+  .detail-grid { grid-template-columns: 1fr; gap: 40px; }
+}

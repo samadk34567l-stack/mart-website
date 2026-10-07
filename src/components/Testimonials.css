@@ -1,0 +1,10 @@
+.testimonials { margin: 40px 0 80px; padding: 80px 0; background: var(--surface); border-radius: var(--radius-lg); }
+.testimonials-title { text-align: center; margin-bottom: 48px; }
+.test-card { padding: 32px; background: var(--bg); border-radius: var(--radius-md); position: relative; }
+.quote-icon { position: absolute; top: 24px; right: 24px; color: #e2e8f0; width: 40px; height: 40px; }
+.test-stars { color: #fbbf24; display: flex; gap: 4px; margin-bottom: 16px; }
+.test-text { font-size: 16px; line-height: 1.6; font-style: italic; margin-bottom: 24px; color: var(--text-light); }
+.test-user { display: flex; align-items: center; gap: 12px; }
+.user-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.user-name { font-weight: 600; }
+.user-role { font-size: 13px; color: var(--text-light); }

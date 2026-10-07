@@ -1,0 +1,9 @@
+.newsletter-section { background: var(--primary-dark); padding: 80px 0; text-align: center; color: white; border-radius: var(--radius-lg); margin-bottom: 80px; position: relative; overflow: hidden; }
+.newsletter-section::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,127,80,0.1) 0%, transparent 50%); }
+.news-title { font-size: 32px; margin-bottom: 16px; position: relative; z-index: 1; }
+.news-desc { font-size: 16px; opacity: 0.8; margin-bottom: 32px; position: relative; z-index: 1; }
+.news-form { display: flex; max-width: 500px; margin: 0 auto; position: relative; z-index: 1; background: rgba(255,255,255,0.1); padding: 8px; border-radius: 50px; backdrop-filter: blur(10px); }
+.news-form input { flex: 1; background: transparent; border: none; padding: 0 20px; color: white; outline: none; }
+.news-form input::placeholder { color: rgba(255,255,255,0.6); }
+.news-form button { background: var(--accent); color: white; padding: 12px 32px; border-radius: 40px; font-weight: 600; transition: var(--transition); }
+.news-form button:hover { background: var(--accent-hover); }

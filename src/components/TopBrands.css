@@ -1,0 +1,8 @@
+.top-brands { padding: 40px 0; border-bottom: 1px solid var(--border); }
+.brands-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 32px; opacity: 0.6; }
+.brand-logo-text { font-size: 24px; font-weight: 700; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 2px; transition: var(--transition); cursor: pointer; }
+.brand-logo-text:hover { opacity: 1; color: var(--primary); transform: scale(1.05); }
+
+@media (max-width: 768px) {
+  .brands-container { justify-content: center; }
+}
